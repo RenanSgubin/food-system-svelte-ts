@@ -1,33 +1,34 @@
 
 <script>
-    
+    import Food from "./Food.svelte";
+    import ReadyModels from "./ReadyModels.svelte";
+    import TitleFoodContainer from "./TitleFoodContainer.svelte"; 
 </script>
 
-<section class="ingredientes-container">
-    <div class="ingredients-content">
-        sasasa
+<section class="food-container">
+    <div class="food-content">
+        <TitleFoodContainer/>
+        <ReadyModels/>
+        <Food/>
     </div>
 </section>
 
 <style>
 
-    .ingredientes-container {
+    .food-container {
         position: absolute;
-        left: 8.5%;
-        width: 83%;
+        right: 0%;
+        width: 91%;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 10rem;
-        background-color: blanchedalmond;
+        background-color: rgb(231, 231, 231);
     }
 
-    .ingredients-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .food-content {
+        width: 100%;
+        height: 100vh;
     }
 
 </style>
