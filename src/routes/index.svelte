@@ -1,6 +1,7 @@
 
 <script>
 
+    import IngredientsContainerRight from "../components/IngredientsContainerRight.svelte";
     import FoodContainer from "../components/FoodContainer.svelte";
     import IngredientsContainer from "../components/IngredientsContainer.svelte";
 
@@ -14,6 +15,7 @@
 <section class="app-container">
     <IngredientsContainer/>
     <FoodContainer/>
+    <IngredientsContainerRight/>
 </section>
 
 <style>

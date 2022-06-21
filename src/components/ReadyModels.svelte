@@ -23,12 +23,12 @@
     }
 
     .ready-models-container {
+        height: 12vh;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
-        margin-top: 10px;
     }
 
     .ready-models-content {
@@ -48,16 +48,18 @@
         justify-content: center;
         align-items: center;
         border: 1px solid rgb(220, 220, 220);
-        margin: 9px;
+        margin: 7px;
+        z-index: 7;
     }
 
     .line {
         position: absolute;
         width: calc(9 * var(--span-width));
-        height: 1px;
-        background-color: rgb(26, 26, 26);
+        height: 2px;
+        background-color: rgb(220, 220, 220);
         top: 50%;
         transform: translateY(-50%);
+        z-index: 6;
     }
 
 </style>

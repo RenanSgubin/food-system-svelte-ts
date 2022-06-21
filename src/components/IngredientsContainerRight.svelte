@@ -19,7 +19,8 @@
 <style>
 
     .ingredientes-container {
-        position: relative;
+        position: absolute;
+        right: 0%;
         width: 9%;
         height: 100vh;
         display: flex;
@@ -28,7 +29,7 @@
         background-color: rgb(242, 241, 241);
         z-index: 5;
         overflow: hidden;
-        border-right: 2px solid rgb(214, 214, 214);
+        border-left: 2px solid rgb(214, 214, 214);
     }
 
     .ingredients-content {

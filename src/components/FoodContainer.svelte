@@ -16,9 +16,7 @@
 <style>
 
     .food-container {
-        position: absolute;
-        right: 0%;
-        width: 91%;
+        width: 82%;
         height: 100vh;
         display: flex;
         justify-content: center;
