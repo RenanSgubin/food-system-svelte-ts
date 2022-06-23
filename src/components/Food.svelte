@@ -1,11 +1,8 @@
 
 
 <section class="food">
-    <img src="/images/restaurant-background.jpg" alt="restauraunt-background" class="restauraunt-bg">
     <section class="food-content">
         <span class="hamburguer-bread-top">
-            <div class="sesame"></div>
-            <div class="sesame"></div>
             <div class="sesame"></div>
             <div class="sesame"></div>
             <div class="sesame"></div>
@@ -16,25 +13,34 @@
         </span>
         <span class="cheese"></span>
         <span class="meat"></span>
+        <span class="bacon">
+            <div class="bacon-line"></div>
+            <div class="bacon-line"></div>
+            <div class="bacon-line"></div>
+        </span>
+        <span class="cheese"></span>
+        <span class="meat"></span>
+        <span class="picle">
+            <div></div>
+            <div></div>
+        </span>
         <span class="tomatoes">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div></div>
+            <div></div>
+            <div></div>
         </span>
         <span class="lettuce"></span>
         <span class="hamburguer-bread-bottom"></span>
     </section>
 
-    <article class="food-floor">
-
-    </article>
+    <article class="food-floor"></article>
 
 </section>
 
 <style>
 
     :root {
-        --food-width: 700px;
+        --food-width: 600px;
     }
 
     .food {
@@ -45,17 +51,7 @@
         justify-content: end;
         align-items: center;
         flex-direction: column;
-    }
-
-    .restauraunt-bg {
-        position: absolute;
-        top: -12vh;
-        width: 100%;
-        -webkit-filter: blur(15px);
-        -moz-filter: blur(15px);
-        -o-filter: blur(15px);
-        -ms-filter: blur(15px);
-        filter: brightness(20%);
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
 
     .food-content {
@@ -76,6 +72,17 @@
         border: 5px solid rgb(109, 84, 22);
     }
 
+    .hamburguer-bread-top {
+        border-top-left-radius: 290px;
+        border-top-right-radius: 290px;
+        height: 210px;
+    }   
+
+    .hamburguer-bread-bottom {
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
     .sesame {
         position: absolute;
         width: 40px;
@@ -92,76 +99,82 @@
     }
 
     .sesame:nth-child(2) {
-        left: 25%;
+        left: 30%;
         top: 20%;
     }
 
     .sesame:nth-child(3) {
-        left: 35%;
-        top: 50%;
+        left: 40%;
+        top: 70%;
     }
 
     .sesame:nth-child(4) {
-        left: 45%;
+        left: 50%;
         top: 20%;
     }
 
     .sesame:nth-child(5) {
-        left: 55%;
+        left: 60%;
         top: 70%;
     }
 
     .sesame:nth-child(6) {
-        left: 65%;
-        top: 30%;
+        left: 70%;
+        top: 20%;
     }
 
     .sesame:nth-child(7) {
-        left: 75%;
+        left: 80%;
         top: 70%;
     }
 
-    .sesame:nth-child(8) {
-        left: 85%;
-        top: 25%;
+    .bacon {
+        width: calc(var(--food-width) + 70px);
+        height: 21px;
+        background-color: #b41f1f;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-
-    .hamburguer-bread-top {
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
-    }   
-
-    .hamburguer-bread-bottom {
-        border-bottom-left-radius: 200px;
-        border-bottom-right-radius: 200px;
+    .bacon-line {
+        width: 100%;
+        height: 4px;
+        background-color: #971515;
     }
 
     .cheese {
         width: var(--food-width);
         height: 20px;
         background-color: rgb(223, 206, 21);
-        border-radius: 20px;
+        border-radius: 5px;
     }
 
     .meat {
         width: var(--food-width);
-        height: 70px;
+        height: 60px;
         background-color: rgb(62, 33, 33);
-        border-radius: 200px;
+        border-radius: 20px;
     }
 
-    .tomatoes {
+    .tomatoes, .picle {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .tomatoes span {
+    .tomatoes div {
         width: calc( var(--food-width) / 3);
         height: 20px;
         background-color: rgb(237, 64, 64);
-        border-radius: 200px;
+        border-radius: 5px;
+    }
+
+    .picle div {
+        width: calc( var(--food-width) / 2);
+        height: 20px;
+        background-color: rgb(40, 136, 10);
+        border-radius: 5px;
     }
 
     .lettuce {
@@ -173,7 +186,7 @@
     /*Floor*/
     .food-floor {
         width: 100%;
-        height: 17vh;
+        height: 12vh;
         background-color: rgb(41, 41, 41);
         z-index: 2;
     }

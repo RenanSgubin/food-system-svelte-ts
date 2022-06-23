@@ -19,7 +19,7 @@
 <style>
 
     :root {
-        --span-width: 90px;
+        --span-width: 75px;
     }
 
     .ready-models-container {
@@ -29,6 +29,7 @@
         align-items: center;
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
 
     .ready-models-content {
@@ -47,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgb(220, 220, 220);
+        border: 3px solid #2b2c30;
         margin: 7px;
         z-index: 7;
     }
@@ -55,8 +56,8 @@
     .line {
         position: absolute;
         width: calc(9 * var(--span-width));
-        height: 2px;
-        background-color: rgb(220, 220, 220);
+        height: 3px;
+        background-color: #2b2c30;
         top: 50%;
         transform: translateY(-50%);
         z-index: 6;
