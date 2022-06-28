@@ -30,6 +30,7 @@
             <div></div>
         </span>
         <span class="lettuce"></span>
+        <span class="egg"></span>
         <span class="hamburguer-bread-bottom"></span>
     </section>
 
@@ -181,6 +182,13 @@
         width: var(--food-width);
         height: 20px;
         background-color: rgb(80, 196, 38);  
+    }
+
+    .egg {
+        width: var(--food-width);
+        height: 20px;
+        background: rgb(254,254,254);
+        background: linear-gradient(90deg, rgba(254,254,254,1) 47%, rgba(244,237,15,1) 47%); 
     }
 
     /*Floor*/

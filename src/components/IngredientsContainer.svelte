@@ -13,8 +13,7 @@
             <span>1</span>
             <span>2</span>
             <span>3</span>
-            <span>4</span>
-            <span id="last-ingredient">5</span>
+            <span id="last-ingredient">4</span>
         </div>
     </div>
 </section>
